@@ -21,7 +21,7 @@ ACCOUNT_HOME_DIR="/home/$ACCOUNT_NAME"
 OH_MY_ZSH_INSTALL_COMMAND='wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh'
 ZSH_SYNTAX_HIGHLIGHTING_INSTALL_COMMAND='git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/home/'"$ACCOUNT_NAME"'/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
 
-apt update && apt install -y zsh
+apt update && apt install -y zsh git
 
 echo "$ACCOUNT_NAME	ALL=(ALL:ALL)	NOPASSWD:ALL" >> /etc/sudoers
 useradd -d $ACCOUNT_HOME_DIR $ACCOUNT_NAME -m -s `which zsh` -U
