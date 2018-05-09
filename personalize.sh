@@ -25,6 +25,7 @@ apt update && apt install -y zsh git
 
 echo "$ACCOUNT_NAME	ALL=(ALL:ALL)	NOPASSWD:ALL" >> /etc/sudoers
 useradd -d $ACCOUNT_HOME_DIR $ACCOUNT_NAME -m -s `which zsh` -U
+usermod -a -G sudo $ACCOUNT_NAME
 
 ACCOUNT_SSH_DIR="$ACCOUNT_HOME_DIR/.ssh"
 mkdir -p $ACCOUNT_SSH_DIR
