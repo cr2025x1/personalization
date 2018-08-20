@@ -1,9 +1,10 @@
 # personalization
 Fast personalization for any fresh instances.
 
-How to use personalize.sh :
+How to use personalize.sh or personalize_light.sh:
 ```
 sudo bash -c "$(wget https://raw.githubusercontent.com/cr2025x1/personalization/master/personalize.sh -O -)"
+sudo bash -c "$(wget https://raw.githubusercontent.com/cr2025x1/personalization/master/personalize_light.sh -O -)"
 ```
 
 personalize.sh does:
